@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)file:///tmp/15.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>huidao</title></head><body><article class="markdown-body"><div class="toc">
+<ul>
+<li><a href="file:///tmp/15.html#1-centos7">1 CentOS7 源安装</a><ul>
+<li><a href="file:///tmp/15.html#11">1.1 向目标主机添加源文件</a></li>
+</ul>
+</li>
+<li><a href="file:///tmp/15.html#2-docker">2 Docker安装</a><ul>
+<li><a href="file:///tmp/15.html#21-linuxdocker">2.1 Linux下面安装docker</a><ul>
+<li><a href="file:///tmp/15.html#211-ubuntu-precise-1204-lts-64-bitdocker">2.1.1 Ubuntu Precise 12.04 (LTS) (64-bit)下面安装docker</a></li>
+<li><a href="file:///tmp/15.html#212-ubuntu-raring-1304-saucy-1310-64-bitdocker">2.1.2 Ubuntu Raring 13.04 和 Saucy 13.10 (64 bit)下面安装docker</a></li>
+<li><a href="file:///tmp/15.html#213-ubuntu-trusty-1404-lts-docker-ubuntu-vivid-1504-docker">2.1.3 Ubuntu Trusty 14.04 (LTS) 下面安装docker &amp;&amp;  Ubuntu Vivid 15.04 下面安装docker</a></li>
+<li><a href="file:///tmp/15.html#214-ubuntu-xenial-1604-ltsdocker">2.1.4 Ubuntu Xenial 16.04 (LTS)下面安装docker</a><ul>
+<li><a href="file:///tmp/15.html#install-using-the-repository">Install using the repository</a></li>
+<li><a href="file:///tmp/15.html#install-from-a-package">Install from a package</a></li>
+</ul>
+</li>
+<li><a href="file:///tmp/15.html#215-rheldocker">2.1.5 红帽RHEL安装docker依赖性检查</a></li>
+<li><a href="file:///tmp/15.html#216-rheldocker">2.1.6 红帽RHEL安装docker容器引擎</a></li>
+<li><a href="file:///tmp/15.html#217-sudodocker">2.1.7 不使用sudo命令执行docker</a></li>
+<li><a href="file:///tmp/15.html#218-rheldocker">2.1.8 红帽RHEL下面设置docker服务自动启动</a></li>
+<li><a href="file:///tmp/15.html#219-rheldocker">2.1.9 红帽RHEL如何删除docker</a></li>
+<li><a href="file:///tmp/15.html#2110-debian-8jessie-docker">2.1.10 Debian 8(Jessie )下面如何安装docker</a></li>
+<li><a href="file:///tmp/15.html#2111-debian-7wheezydocker">2.1.11 Debian 7(Wheezy)下面如何安装docker</a></li>
+</ul>
+</li>
+<li><a href="file:///tmp/15.html#22-windowsdocker">2.2 Windows下面安装docker</a></li>
+<li><a href="file:///tmp/15.html#23-mac-os-x-docker">2.3 Mac OS X 下面安装docker</a></li>
+</ul>
+</li>
+<li><a href="file:///tmp/15.html#3-docker">3 配置docker网桥</a><ul>
+<li><a href="file:///tmp/15.html#31">3.1 安装工具</a></li>
+<li><a href="file:///tmp/15.html#32-br0">3.2  然后创建一个网桥 br0</a></li>
+<li><a href="file:///tmp/15.html#33">3.3 切换网桥</a></li>
+<li><a href="file:///tmp/15.html#34-docker">3.4 重启docker服务</a></li>
+<li><a href="file:///tmp/15.html#35">3.5 删除网桥</a></li>
+</ul>
+</li>
+<li><a href="file:///tmp/15.html#4-docker">4 搭建Docker私有镜像库</a><ul>
+<li><a href="file:///tmp/15.html#41">4.1 镜像拉取或制作</a></li>
+<li><a href="file:///tmp/15.html#42">4.2 推送镜像</a></li>
+<li><a href="file:///tmp/15.html#43-docker">4.3 重启Docker</a></li>
+<li><a href="file:///tmp/15.html#44">4.4 私有镜像库简单命令操作</a></li>
+<li><a href="file:///tmp/15.html#45-v1-http-api">4.5 私有镜像库V1 HTTP API</a></li>
+<li><a href="file:///tmp/15.html#46-v2-http-api">4.6 私有镜像库V2 HTTP API</a></li>
+</ul>
+</li>
+<li><a href="file:///tmp/15.html#5-docker-consul">5 搭建Docker Consul集群及相关组件</a><ul>
+<li><a href="file:///tmp/15.html#51">5.1 单机集群部署</a></li>
+<li><a href="file:///tmp/15.html#52">5.2 多宿主机集群部署</a></li>
+<li><a href="file:///tmp/15.html#53-registrator">5.3 Registrator</a></li>
+<li><a href="file:///tmp/15.html#54-consul-template">5.4 Consul-template</a></li>
+<li><a href="file:///tmp/15.html#55-consul-http-api">5.5 Consul HTTP API</a></li>
+</ul>
+</li>
+<li><a href="file:///tmp/15.html#6-docker-nsq">6 搭建Docker NSQ集群及相关组件</a><ul>
+<li><a href="file:///tmp/15.html#61">6.1 启动镜像顺序&amp;名令</a></li>
+<li><a href="file:///tmp/15.html#62-nsq">6.2 NSQ介绍</a></li>
+<li><a href="file:///tmp/15.html#63-nsq-cluster">6.3 NSQ Cluster</a></li>
+<li><a href="file:///tmp/15.html#64-nsq-http-api">6.4 NSQ HTTP API</a></li>
+<li><a href="file:///tmp/15.html#65-auth">6.5 AUTH</a></li>
+<li><a href="file:///tmp/15.html#66">6.6 点对点处理延迟</a></li>
+<li><a href="file:///tmp/15.html#67-statsd-graphite-integration">6.7 Statsd / Graphite Integration</a></li>
+</ul>
+</li>
+<li><a href="file:///tmp/15.html#7-shelldocker">7 Shell脚本部署应用Docker容器</a></li>
+<li><a href="file:///tmp/15.html#8-jenkin">8 Jenkin部署应用服务容器</a></li>
+<li><a href="file:///tmp/15.html#9-nginx">9 Nginx 搭建及优化</a></li>
+<li><a href="file:///tmp/15.html#10-docker-swarm">10 Docker Swarm</a></li>
+<li><a href="file:///tmp/15.html#11-docker-compose">11 Docker Compose</a></li>
+</ul>
+</div>
+<h2 id="1-centos7"><a name="user-content-1-centos7" href="file:///tmp/15.html#1-centos7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1 CentOS7 源安装</h2>
+<h3 id="11"><a name="user-content-11" href="file:///tmp/15.html#11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.1 向目标主机添加源文件</h3>
+<p><code>cd /etc/yum.repos.d/</code></p>
+<p><code>ls</code><br>
+查看<code>yum.repos.d</code>目录下的无效源文件，以<code>mv [filename] [filename].bak</code>的方式注释，并新建可用源文件如下：</p>
+<p><code>vim CentOS-Base.repo</code> </p>
+<p>写入源文件  </p>
+<pre><code>#CentOS-Base.repo
+#The mirror system uses the connecting IP address of the client and the
+#update status of each mirror to pick mirrors that are updated to and
+#geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the 
+# remarked out baseurl= line instead.
+[base]
+name=CentOS-$releasever - Base
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os&amp;infra=$infra
+baseurl=http://172.21.97.80/yum/centos/7/os/x86_64/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#released updates 
+[updates]
+name=CentOS-$releasever - Updates
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates&amp;infra=$infra
+baseurl=http://172.21.97.80/yum/centos/7/updates/x86_64/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras&amp;infra=$infra
+baseurl=http://172.21.97.80/yum/centos/7/extras/x86_64/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus&amp;infra=$infra
+#baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-$releasever - Contrib
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=contrib&amp;infra=$infra
+#baseurl=http://mirror.centos.org/centos/$releasever/contrib/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+</code></pre>
+
+<p>执行<code>yum update -y</code>命令，update更新完成后安装所需软件。</p>
+<h2 id="2-docker"><a name="user-content-2-docker" href="file:///tmp/15.html#2-docker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2 Docker安装</h2>
+<h3 id="21-linuxdocker"><a name="user-content-21-linuxdocker" href="file:///tmp/15.html#21-linuxdocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1 Linux下面安装docker</h3>
+<h4 id="211-ubuntu-precise-1204-lts-64-bitdocker"><a name="user-content-211-ubuntu-precise-1204-lts-64-bitdocker" href="file:///tmp/15.html#211-ubuntu-precise-1204-lts-64-bitdocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.1 Ubuntu Precise 12.04 (LTS) (64-bit)下面安装docker</h4>
+<ul>
+<li>内核要求：</li>
+</ul>
+<p>由于LXC的一个bug，Docker在3.8内核下面运行最佳。Ubuntu的Precise版本内置的是3.2版本的内核，因此我们首先需要升级内核。安装下面的步骤可以升级到3.8内核，并内置AUFS的支持。同时还包括了通用头文件，这样我们就可以激活依赖于这些头文件的包，比如ZFS，VirtualBox的增强功能包。<br>
+</p><pre><code># install the backported kernel
+sudo apt-get update
+sudo apt-get install linux-image-generic-lts-raring linux-headers-generic-lts-raring
+
+# reboot
+sudo reboot
+</code></pre><br>
+* 安装Docker：<br>
+Docker有deb格式的安装包，安装起来非常的容易。首先添加Docker库的密钥。<br>
+<pre><code>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+</code></pre><br>
+然后把Docker的库添加到apt的源列表中，更新并安装lxc-docker包。<br>
+<pre><code>sudo sh -c "echo deb http://get.docker.io/ubuntu docker main\
+&gt; /etc/apt/sources.list.d/docker.list"
+sudo apt-get update
+sudo apt-get install lxc-docker
+</code></pre><p></p>
+<p>安装过程中会有一个警告信息，输入”yes”继续安装即可。安装成功之后，可以下载ubuntu镜像并启动一个镜像来验证安装是否正常。<br>
+<code>sudo docker run -i -t ubuntu /bin/bash</code><br>
+成功运行之后，输入exit退出即可。</p>
+<h4 id="212-ubuntu-raring-1304-saucy-1310-64-bitdocker"><a name="user-content-212-ubuntu-raring-1304-saucy-1310-64-bitdocker" href="file:///tmp/15.html#212-ubuntu-raring-1304-saucy-1310-64-bitdocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.2 Ubuntu Raring 13.04 和 Saucy 13.10 (64 bit)下面安装docker</h4>
+<ul>
+<li>激活AUFS文件系统支持</li>
+</ul>
+<p>Ubuntu的Raring版本内置了3.8版本的内核，因此我们不需要安装AUFS系统。但是并不是所有的系统都激活了AUFS系统的支持。Docker 0.7版本中AUFS的支持是可选项，以驱动的方式存在，如果可能的话，我们还是建议使用AUFS系统。使用下面的命令来确保AUFS安装成功。<br>
+</p><pre><code>sudo apt-get update
+sudo apt-get install linux-image-extra-`uname -r`
+</code></pre><p></p>
+<ul>
+<li>安装</li>
+</ul>
+<p>Docker有Debian包，所以安装起来非常的方便。</p>
+<ul>
+<li>警告：请注意，从0.6版本开始安装步骤已经发生了变化，如果你是从比较早的版本升级上来，还需要执行下面的命令。</li>
+</ul>
+<p>首先把Docker库的密钥添加到本地。<br>
+</p><pre><code>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+</code></pre><br>
+把Docker库添加到apt的源列表中，执行update命令，然后安装lxc-docker包。<br>
+<pre><code>sudo sh -c "echo deb http://get.docker.io/ubuntu docker main\
+&gt; /etc/apt/sources.list.d/docker.list"
+sudo apt-get update
+sudo apt-get install lxc-docker
+</code></pre><p></p>
+<p>现在来确认安装是否成功，可以下载ubuntu镜像并启动一个容器。<br>
+<code>sudo docker run -i -t ubuntu /bin/bash</code></p>
+<h4 id="213-ubuntu-trusty-1404-lts-docker-ubuntu-vivid-1504-docker"><a name="user-content-213-ubuntu-trusty-1404-lts-docker-ubuntu-vivid-1504-docker" href="file:///tmp/15.html#213-ubuntu-trusty-1404-lts-docker-ubuntu-vivid-1504-docker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.3 Ubuntu Trusty 14.04 (LTS) 下面安装docker &amp;&amp;  Ubuntu Vivid 15.04 下面安装docker</h4>
+<p>docker的发展非常迅速，apt源的更新往往比较滞后。所以docker官网推荐的安装方式都是下载docker安装脚本安装。</p>
+<ul>
+<li>依赖关系：</li>
+</ul>
+<p>Ubuntu 14.04版本无需安装额外的依赖包，可以直接安装。<br>
+安装步骤：</p>
+<p>使用管理员帐号登录ubuntu 14.04系统，保证该管理有root权限，或者可以执行sudo命令。<br>
+检查curl包有没有安装。<br>
+<code>$ which curl</code><br>
+如果curl没有安装的话，更新apt源之后，安装curl包。<br>
+<code>$ sudo apt-get update $ sudo apt-get install curl</code><br>
+获得最新的docker安装包。<br>
+<code>$ curl -sSL https://get.docker.com/ | sh</code><br>
+shell会提示你输入sudo的密码，然后开始执行安装过程。<br>
+确认Docker是否安装成功。<br>
+<code>$ sudo docker run hello-world</code><br>
+这个命令会下载一个测试用的镜像并启动一个容器运行它。</p>
+<h4 id="214-ubuntu-xenial-1604-ltsdocker"><a name="user-content-214-ubuntu-xenial-1604-ltsdocker" href="file:///tmp/15.html#214-ubuntu-xenial-1604-ltsdocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.4 Ubuntu Xenial 16.04 (LTS)下面安装docker</h4>
+<ul>
+<li>Recommended extra packages</li>
+</ul>
+<p>You need curl if you don’t have it. Unless you have a strong reason not to, install the linux-image-extra-* packages, which allow Docker to use the aufs storage drivers. This applies to all versions of Ubuntu.<br>
+</p><pre><code>$ sudo apt-get update
+
+$ sudo apt-get install curl \
+    linux-image-extra-$(uname -r) \
+    linux-image-extra-virtual
+</code></pre><p></p>
+<h5 id="install-using-the-repository"><a name="user-content-install-using-the-repository" href="file:///tmp/15.html#install-using-the-repository" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Install using the repository</h5>
+<p>Before you install Docker for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install, update, or downgrade Docker from the repository.</p>
+<p>一、Set up the repository</p>
+<p>1.Install packages to allow apt to use a repository over HTTPS:</p>
+<pre><code>$ sudo apt-get install apt-transport-https \
+                       ca-certificates
+</code></pre>
+
+<p>2.Add Docker’s official GPG key:<br>
+<code>$ curl -fsSL https://yum.dockerproject.org/gpg | sudo apt-key add -</code></p>
+<p>Note: The URL is correct, even for Linux distributions that use APT.<br>
+Verify that the key ID is 58118E89F3A912897C070ADBF76221572C52609D.<br>
+</p><pre><code>$ apt-key fingerprint 58118E89F3A912897C070ADBF76221572C52609D
+
+  pub   4096R/2C52609D 2015-07-14
+        Key fingerprint = 5811 8E89 F3A9 1289 7C07  0ADB F762 2157 2C52 609D
+  uid                  Docker Release Tool (releasedocker) &lt;docker@docker.com&gt;
+</code></pre><br>
+3.Use the following command to set up the stable repository. To also enable the testing repository, add the words testing after main on the last line. Do not use these unstable repositories on production systems or for non-testing workloads.<br>
+<pre><code>$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository \
+       "deb https://apt.dockerproject.org/repo/ \
+       ubuntu-$(lsb_release -cs) \
+       main"
+</code></pre><br>
+To disable the testing repository, you can edit /etc/apt/sources.list and remove the word testing from the appropriate line in the file.<p></p>
+<p>Install Docker</p>
+<p>1.Update the apt package index.</p>
+<p><code>$ sudo apt-get update</code></p>
+<p>2.Install the latest version of Docker, or go to the next step to install a specific version. Any existing installation of Docker is replaced.<br>
+Use this command to install the latest version of Docker:</p>
+<p><code>$ sudo apt-get -y install docker-engine</code></p>
+<p>Warning: If you have both stable and unstable repositories enabled, installing or updating without specifying a version in the apt-get install or apt-get update command will always install the highest possible version, which will almost certainly be an unstable one.</p>
+<p>3.On production systems, you should install a specific version of Docker instead of always using the latest. This output is truncated. List the available versions.<br>
+</p><pre><code>$ apt-cache madison docker-engine
+
+docker-engine | 1.13.0-0~xenial | https://apt.dockerproject.org/repo ubuntu-xenial/main amd64 Packages
+docker-engine | 1.12.3-0~xenial | https://apt.dockerproject.org/repo ubuntu-xenial/main amd64 Packages
+docker-engine | 1.12.2-0~xenial | https://apt.dockerproject.org/repo ubuntu-xenial/main amd64 Packages
+docker-engine | 1.12.1-0~xenial | https://apt.dockerproject.org/repo ubuntu-xenial/main amd64 Packages
+</code></pre><p></p>
+<p>The contents of the list depend upon which repositories are enabled, and will be specific to your version of Ubuntu (indicated by the xenial suffix on the version, in this example). Choose a specific version to install. The second column is the version string. The third column is the repository name, which indicates which repository the package is from and by extension its stability level. To install a specific version, append the version string to the package name and separate them by an equals sign (=):</p>
+<p><code>$ sudo apt-get -y install docker-engine=&lt;VERSION_STRING&gt;</code></p>
+<p>The Docker daemon starts automatically.<br>
+4.Verify that docker is installed correctly by running the hello-world image.</p>
+<p><code>$ sudo docker run hello-world</code></p>
+<p>This command downloads a test image and runs it in a container. When the container runs, it prints an informational message and exits.<br>
+Docker is installed and running. You need to use sudo to run Docker commands. Continue to Linux postinstall to allow non-privileged users to run Docker commands and for other optional configuration steps.</p>
+<ul>
+<li>Upgrade Docker<br>
+To upgrade Docker, first run sudo apt-get update, then follow the installation instructions, choosing the new version you want to install.</li>
+</ul>
+<h5 id="install-from-a-package"><a name="user-content-install-from-a-package" href="file:///tmp/15.html#install-from-a-package" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Install from a package</h5>
+<p>If you cannot use Docker’s repository to install Docker, you can download the .deb file for your release and install it manually. You will need to download a new file each time you want to upgrade Docker.</p>
+<p>1.Go to <a href="https://apt.dockerproject.org/repo/pool/main/d/docker-engine/">https://apt.dockerproject.org/repo/pool/main/d/docker-engine/</a> and download the .deb file for the Docker version you want to install and for your version of Ubuntu.</p>
+<p>Note: To install a testing version, change the word main in the URL to testing. Do not use unstable versions of Docker in production or for non-testing workloads.</p>
+<p>2.Install Docker, changing the path below to the path where you downloaded the Docker package.<br>
+<code>$ sudo dpkg -i /path/to/package.deb</code><br>
+The Docker daemon starts automatically.<br>
+3.Verify that docker is installed correctly by running the hello-world image.<br>
+<code>$ sudo docker run hello-world</code><br>
+This command downloads a test image and runs it in a container. When the container runs, it prints an informational message and exits.<br>
+Docker is installed and running. You need to use sudo to run Docker commands. Continue to Post-installation steps for Linux to allow non-privileged users to run Docker commands and for other optional configuration steps.</p>
+<ul>
+<li>Upgrade Docker<br>
+To upgrade Docker, download the newer package file and repeat the installation procedure, pointing to the new file.</li>
+</ul>
+<h4 id="215-rheldocker"><a name="user-content-215-rheldocker" href="file:///tmp/15.html#215-rheldocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.5 红帽RHEL安装docker依赖性检查</h4>
+<p>Docker目前可以在红帽企业版7(Red Hat Enterprise Linux 7)版本下面安装。<br>
+依赖性检查：</p>
+<p>Docker需要一个64位系统的红帽系统，内核的版本必须大于3.10。可以用下面的命令来检查是否满足docker的要求。<br>
+<code>$ uname -r 3.10.0-229.el7.x86_64</code><br>
+如果上述的依赖满足的话，还是推荐您全面地更新红帽系统，以保证内核相应的bug都得到修复。</p>
+<h4 id="216-rheldocker"><a name="user-content-216-rheldocker" href="file:///tmp/15.html#216-rheldocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.6 红帽RHEL安装docker容器引擎</h4>
+<p>目前红帽RHEL系统下面安装docker可以有两种方式：一种是使用curl获得docker的安装脚本进行安装，还有一种是使用yum包管理器来安装docker。</p>
+<ul>
+<li>
+<p>一、 使用安装脚本安装。</p>
+</li>
+<li>
+<p>备注：你可以按照同样的步骤在CentOS系统下面安装docker。</p>
+</li>
+</ul>
+<p>使用一个有sudo权限的帐号登录红帽系统。</p>
+<p>1.更新现有的yum包。</p>
+<p><code>$ sudo yum update</code></p>
+<p>2.执行docker安装脚本。</p>
+<p><code>$ curl -sSL https://get.docker.com/ | sh</code></p>
+<p>3.启动docker服务。</p>
+<p><code>$ sudo service docker start</code></p>
+<p>4.确认docker安装成功。</p>
+<pre><code>$ sudo docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from hello-world
+a8219747be10: Pull complete 91c95931e552: Already exists 
+hello-world:latest: The image you are pulling has been verified. Important: image verification is a tech preview feature and should not be relied on to provide security. Digest: sha256:aa03e5d0d5553b4c3473e89c8619cf79df368babd1.7.1cf5daeb82aab55838d
+Status: Downloaded newer image for hello-world:latest
+Hello from Docker.
+This message shows that your installation appears to be working correctly.
+To generate this message, Docker took the following steps: 1. The Docker client contacted the Docker daemon. 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+        (Assuming it was not already locally available.) 3. The Docker daemon created a new container from that image which runs the executable that produces the output you are currently reading. 4. The Docker daemon streamed that output to the Docker client, which sent it to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+For more examples and ideas, visit: http://docs.docker.com/userguide/
+</code></pre>
+
+<ul>
+<li>二、使用yum包安装</li>
+</ul>
+<p>使用有sudo权限的帐号登录系统。<br>
+1.更新yum包。<br>
+<code>$ sudo yum update</code><br>
+2.添加docker源。</p>
+<p></p><pre><code>$ cat &gt;/etc/yum.repos.d/docker.repo &lt;&lt;-EOF
+[dockerrepo]
+name=Docker Repository
+baseurl=https://yum.dockerproject.org/repo/main/centos/7 enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg EOF
+</code></pre><br>
+3.使用yum命令安装docker。<br>
+<code>$ sudo yum install docker-engine</code><br>
+4.启动docker服务。<br>
+<code>$ sudo service docker start</code><br>
+5.确认docker是否安装成功。<br>
+<code>$ sudo docker run hello-world</code><p></p>
+<h4 id="217-sudodocker"><a name="user-content-217-sudodocker" href="file:///tmp/15.html#217-sudodocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.7 不使用sudo命令执行docker</h4>
+<ul>
+<li>为什么需要创建docker用户组？</li>
+</ul>
+<p>Docker守候进程绑定的是一个unix socket，而不是TCP端口。这个套接字默认的属主是root，其他是用户可以使用sudo命令来访问这个套接字文件。因为这个原因，docker服务进程都是以root帐号的身份运行的。<br>
+为了避免每次运行docker命令的时候都需要输入sudo，可以创建一个docker用户组，并把相应的用户添加到这个分组里面。当docker进程启动的时候，会设置该套接字可以被docker这个分组的用户读写。这样只要是在docker这个组里面的用户就可以直接执行docker命令了。</p>
+<ul>
+<li>警告：该dockergroup等同于root帐号，具体的详情可以参考这篇文章：Docker Daemon Attack Surface.</li>
+</ul>
+<p>操作步骤：<br>
+1.使用有sudo权限的帐号登录系统。<br>
+2.创建docker分组，并将相应的用户添加到这个分组里面。<br>
+<code>sudo usermod -aG docker your_username</code><br>
+3.退出，然后重新登录，以便让权限生效。<br>
+4.确认你可以直接运行docker命令。<br>
+<code>$ docker run hello-world</code></p>
+<h4 id="218-rheldocker"><a name="user-content-218-rheldocker" href="file:///tmp/15.html#218-rheldocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.8 红帽RHEL下面设置docker服务自动启动</h4>
+<h4 id="219-rheldocker"><a name="user-content-219-rheldocker" href="file:///tmp/15.html#219-rheldocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.9 红帽RHEL如何删除docker</h4>
+<p>可以使用yum来删除docker。<br>
+1.列出docker包的具体的名字。<br>
+</p><pre><code>$ yum list installed | grep docker
+yum list installed | grep docker
+docker-engine.x86_64 1.7.1-0.1.el7
+</code></pre><br>
+2.删除docker。<br>
+<code>$ sudo yum -y remove docker-engine.x86_64</code><p></p>
+<ul>
+<li>备注：该命令只是删除docker运行环境，并不会删除镜像，容器，卷文件，以及用户创建的配置文件。</li>
+</ul>
+<p>3.清除镜像和容器文件。<br>
+<code>$ rm -rf /var/lib/docker</code><br>
+4.手工查找并删除用户创建的配置文件。</p>
+<h4 id="2110-debian-8jessie-docker"><a name="user-content-2110-debian-8jessie-docker" href="file:///tmp/15.html#2110-debian-8jessie-docker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.10 Debian 8(Jessie )下面如何安装docker</h4>
+<p>Debian也是使用非常广泛的系统。这篇文章讲述如何在debian 8 下面安装docker运行环境。</p>
+<p>Debian 8 自带了3.16的内核，已经满足了docker运行的要求。<br>
+但是因为安全方面的原因，docker.io包并没有放在debian的stable源里面，而是放在了backports源里面。</p>
+<p>打破沙锅问到底的朋友，可以参考这两篇文章：<br>
+为什么从jessie源里面移除docker.io包:<a href="https://lists.debian.org/debian-release/2015/03/msg00685.html">https://lists.debian.org/debian-release/2015/03/msg00685.html</a>(因为go语言包版本的问题)<br>
+Debian backports的介绍和使用: <a href="http://backports.debian.org/Instructions/">http://backports.debian.org/Instructions/</a></p>
+<ul>
+<li>一、安装docker.io包之前，需要先设置使用backports源</li>
+</ul>
+<p>编辑/etc/apt/sources.list文件，加入下面这一句：<br>
+<code>deb http://http.debian.net/debian jessie-backports main</code><br>
+然后执行apt-get update命令更新源。</p>
+<ul>
+<li>二、安装docker.io包</li>
+</ul>
+<p>确保已经按照第一步的操作步骤添加了backports源，然后执行下面的命令。<br>
+<code>$ sudo apt-get update $ sudo apt-get install docker.io</code><br>
+确认docker运行是否正常。<br>
+<code>$ sudo docker run --rm hello-world</code></p>
+<ul>
+<li>三、Debian 8如何删除docker?</li>
+</ul>
+<p>Debian系统下面删除docker，要按照下面几个步骤来删除。<br>
+1. 使用purge命令清除docker-io包。<br>
+<code>$ sudo apt-get purge docker-io</code><br>
+或者用autoremove命令将不再使用的依赖的包删除掉。<br>
+<code>$ sudo apt-get autoremove --purge docker-io</code><br>
+需要注意的是上面的命令只是删除了docker.io包，并不会删除下载的镜像，产生的容器文件，卷，已经用户创建的配置文件。如果你觉得不爽，可以用下面的命令干掉它们：<br>
+<code>$ rm -rf /var/lib/docker</code><br>
+然后手工删除创建的配置文件。<br>
+* 备注：docker这个名字已经被占用了，所以debian下面的docker的包的名字是docker.io。</p>
+<h4 id="2111-debian-7wheezydocker"><a name="user-content-2111-debian-7wheezydocker" href="file:///tmp/15.html#2111-debian-7wheezydocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1.11 Debian 7(Wheezy)下面如何安装docker</h4>
+<p>因为bug #407的原因，docker要求linux内核必须大于等于3.8。很不幸的是debian7(wheezy)版本自带的是3.2版本。<br>
+怎么办呢？还是要使用backports源。wheezy-backports支持3.16版本的内核，可以满足docker的要求。<br>
+一、设置backports源</p>
+<p>将下面这句话添加到apt的源文件中。<br>
+<code>deb http://http.debian.net/debian wheezy-backports main</code><br>
+二、安装docker</p>
+<p>从backports源安装新版本的内核，注意命令中的-t wheezy-backports选项。<br>
+<code>$ sudo apt-get update $ sudo apt-get install -t wheezy-backports linux-image-amd64</code><br>
+重启机器以启用新的内核。<br>
+使用docker的安装脚本安装docker。<br>
+<code>curl -sSL https://get.docker.com/ | sh</code><br>
+三、删除</p>
+<p>删除docker包<br>
+<code>$ sudo apt-get purge docker-engine</code><br>
+同时删除不再使用的依赖包。<br>
+<code>$ sudo apt-get autoremove --purge docker-engine</code><br>
+使用下面的命令删除镜像文件，容器文件，卷文件。<br>
+<code>$ rm -rf /var/lib/docker</code><br>
+然后手工删除用户创建的配置文件。</p>
+<h3 id="22-windowsdocker"><a name="user-content-22-windowsdocker" href="file:///tmp/15.html#22-windowsdocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.2 Windows下面安装docker</h3>
+<p>详细见官方文档[<a href="https://docs.docker.com/docker-for-windows/">https://docs.docker.com/docker-for-windows/</a>]</p>
+<h3 id="23-mac-os-x-docker"><a name="user-content-23-mac-os-x-docker" href="file:///tmp/15.html#23-mac-os-x-docker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.3 Mac OS X 下面安装docker</h3>
+<p>详细见官方文档[<a href="https://docs.docker.com/docker-for-mac/">https://docs.docker.com/docker-for-mac/</a>]</p>
+<h2 id="3-docker"><a name="user-content-3-docker" href="file:///tmp/15.html#3-docker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3 配置docker网桥</h2>
+<p>Docker 服务默认会创建一个 docker0 网桥，它在内核层连通了其他的物理或虚拟网卡，这就将所有容器和本地主机都放到同一个物理网络。<br>
+用户也可以指定网桥来连接各个容器，步骤如下：</p>
+<h3 id="31"><a name="user-content-31" href="file:///tmp/15.html#31" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.1 安装工具</h3>
+<pre><code>$ sudo apt-get install bridge-utils
+</code></pre>
+
+<p>然后可以用<code>brctl show</code>来查看当前网桥信息，可以看到目前只有一个<code>docker0</code></p>
+<p><code>brctl show</code></p>
+<pre><code>bridge name bridge id         STP enabled interfaces
+docker0     8000.56847afe9799 no          veth59c4517 
+</code></pre>
+
+<h3 id="32-br0"><a name="user-content-32-br0" href="file:///tmp/15.html#32-br0" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.2  然后创建一个网桥 br0</h3>
+<pre><code>$ sudo brctl addbr br0
+$ sudo ip addr add 192.168.66.1/24 dev br0
+$ sudo ip link set dev br0 up
+</code></pre>
+
+<p>添加后可以用<code>brctl show</code>来查看<br>
+</p><pre><code>$ brctl show
+</code></pre><br>
+<pre><code>bridge name bridge id         STP enabled interfaces
+br0         8000.000000000000 no          veth59c4517
+docker0     8000.56847afe9799 no 
+</code></pre><p></p>
+<h3 id="33"><a name="user-content-33" href="file:///tmp/15.html#33" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.3 切换网桥</h3>
+<p>编辑<code>/etc/default/docker</code>文件，添加如下Docker参数，是Docker默认使用上面新添加的网桥<br>
+</p><pre><code>DOCKER_OPTS="-b=br0"
+</code></pre><br>
+或者，如果你是显式启动Docker，可以在启动命令中加入<code>-b=br0</code>，例如<code>dockerd -b=br0</code>等<p></p>
+<h3 id="34-docker"><a name="user-content-34-docker" href="file:///tmp/15.html#34-docker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.4 重启docker服务</h3>
+<p></p><pre><code>$ sudo service docker restart
+</code></pre><br>
+此时，新建一个容器，可以看到它已经桥接到了 br0 上了。<p></p>
+<h3 id="35"><a name="user-content-35" href="file:///tmp/15.html#35" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.5 删除网桥</h3>
+<p>最后，记得删除<code>docker0</code>网桥,不然可能会引起向外访问地址重定向到docker容器内网中,出现无法访问等一系列问题。<br>
+</p><pre><code>$ sudo ip link set dev docker0 down
+$ sudo brctl delbr docker0
+</code></pre><p></p>
+<h2 id="4-docker"><a name="user-content-4-docker" href="file:///tmp/15.html#4-docker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4 搭建Docker私有镜像库</h2>
+<p>和Mavan的管理一样，Dockers不仅提供了一个中央仓库，同时也允许我们使用registry搭建本地私有仓库。</p>
+<p>使用私有仓库有许多优点：</p>
+<ul>
+<li>节省网络带宽，针对于每个镜像不用每个人都去中央仓库上面去下载，只需要从私有仓库中下载即可；</li>
+<li>提供镜像资源利用，针对于公司内部使用的镜像，推送到本地的私有仓库中，以供公司内部相关人员使用。</li>
+</ul>
+<p>接下来我们就大致说一下如何在本地搭建私有仓库。</p>
+<p>目前Docker Registry已经升级到了v2，最新版的Docker已不再支持v1。Registry v2使用Go语言编写，在性能和安全性上做了很多优化，重新设计了镜像的存储格式。此文档是在v1的基础上写的，如果需要安装registry v2，只需下载registry:2.2即可，或者可以下载后面的安装脚本运行安装。</p>
+<h3 id="41"><a name="user-content-41" href="file:///tmp/15.html#41" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.1 镜像拉取或制作</h3>
+<ul>
+<li>首先下载registry镜像</li>
+</ul>
+<p></p><pre><code>$ sudo docker pull registry
+</code></pre><br>
+* 下载完之后我们通过该镜像启动一个容器<p></p>
+<p></p><pre><code>$ sudo docker run -d -p 5000:5000 registry
+</code></pre><br>
+默认情况下，会将仓库存放于容器内的/tmp/registry目录下，这样如果容器被删除，则存放于容器中的镜像也会丢失，所以我们一般情况下会指定本地一个目录挂载到容器内的/tmp/registry下，如下：<p></p>
+<p>V1:<br>
+</p><pre><code>$ sudo docker run -d -p 5000:5000 -v /opt/data/registry:/tmp/registry registry 
+</code></pre><br>
+V2:<br>
+<pre><code>$ sudo docker run -d -p 5000:5000 --restart=always -v /opt/registry:/var/lib/registry
+</code></pre><br>
+* Registry V2.2的安装脚本如下：<p></p>
+<pre><code>
+#!/bin/bash
+# Description: create a private registry v2.2
+# Version: 0.2
+#
+# Author: wangtao 479021795@qq.com
+# Date: 2015/10/29
+
+set -o xtrace
+
+if [[ $UID -ne 0 ]]; then
+    echo "Not root user. Please run as root."
+    exit 0
+fi
+
+# Install Docker if not
+docker -v
+if [[ $? -ne 0 ]]; then
+    echo "Please install Docker first."
+    exit 0
+fi
+
+REGISTRY_VERSION=2.2
+
+# Download registry image v2.2
+docker pull registry:${REGISTRY_VERSION}
+
+# Start registry container
+mkdir /opt/registry
+docker run -d -p 5000:5000 --restart=always -v /opt/registry:/var/lib/registry --name registry registry:${REGISTRY_VERSION}
+
+</code></pre>
+
+<h3 id="42"><a name="user-content-42" href="file:///tmp/15.html#42" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.2 推送镜像</h3>
+<p>首先将从DockerHub下载的busybox打一下tag：<br>
+</p><pre><code>$ sudo docker tag busybox 10.1.65.227:5000/base/busybox
+</code></pre><br>
+接下来把打了tag的镜像上传到私有仓库。<br>
+<pre><code>$ sudo docker push 10.1.65.227:5000/base/busybox
+</code></pre><br>
+此时，可以看到push失败，具体错误如下：<br>
+<pre><code>2015/01/05 11:01:17 Error: Invalid registry endpoint https://192.168.112.136:5000/v1/: Get https://10.1.65.227:5000/v1/_ping: dial tcp 10.1.65.227:5000: connection refused. If this private registry supports only HTTP or HTTPS with an unknown CA certificate, please add `--insecure-registry 10.1.65.227:5000` to the daemon's arguments. In the case of HTTPS, if you have access to the registry's CA certificate, no need for the flag; simply place the CA certificate at /etc/docker/certs.d/192.168.112.136:5000/ca.crt 
+</code></pre><p></p>
+<p>因为Docker从1.3.X之后，与docker registry交互默认使用的是https，然而此处搭建的私有仓库只提供http服务，所以当与私有仓库交互时就会报上面的错误。为了解决这个问题需要在启动docker server时增加启动参数为默认使用http访问。修改docker启动配置文件（此处是修改132机器的配置）Ubuntu下配置文件地址为：<code>/etc/default/docker</code>或者<code>/etc/init/docker.conf</code>、<code>/etc/init.d/docker</code>，在其中<code>DOCKER_OPTS</code>或者启动参数位置增加<code>–insecure-registry 192.168.112.136:5000</code> ：<br>
+</p><pre><code>$ sudo vi /etc/init/docker.conf
+</code></pre><br>
+添加位置如下<br>
+<pre><code class="java">script
+    # modify these in /etc/default/$UPSTART_JOB (/etc/default/docker)
+    DOCKERD=/usr/bin/dockerd
+    DOCKER_OPTS= 
+    if [ -f /etc/default/$UPSTART_JOB ]; then
+        . /etc/default/$UPSTART_JOB
+    fi
+    exec "$DOCKERD" $DOCKER_OPTS --raw-logs
+end script
+</code></pre><br>
+<pre><code>$ sudo vi /etc/init.d/docker
+</code></pre><br>
+<pre><code class="java">export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
+
+BASE=docker
+
+# modify these in /etc/default/$BASE (/etc/default/docker)
+DOCKERD=/usr/bin/dockerd
+# This is the pid file managed by docker itself
+DOCKER_PIDFILE=/var/run/$BASE.pid
+# This is the pid file created/managed by start-stop-daemon
+DOCKER_SSD_PIDFILE=/var/run/$BASE-ssd.pid
+DOCKER_LOGFILE=/var/log/$BASE.log
+
+DOCKER_OPTS="-b=bridge0 --insecure-registry=172.18.0.0/16 --default-ulimit nofile=65535:65535  --insecure-registry 10.1.65.66:8080 --insecure-registry 10.10.15.168:5000 --insecure-registry 10.1.65.227:5000 --registry-mirror=http://6e512fcf.m.daocloud.io --selinux-enabled -H 0.0.0.0:2375 -H unix:///var/run/docker.sock  --insecure-registry 172.18.11.33:5000 --insecure-registry 10.1.64.83:5000  --insecure-registry 10.1.65.66:5000 --insecure-registry 10.1.64.84:5000  --insecure-registry 172.18.14.11:5000"
+DOCKER_DESC="Docker"
+</code></pre><br>
+若服务器Linux发行版本为CentOS，则做如下操作：<p></p>
+<pre><code>$ vi /etc/sysconfig/docker
+</code></pre>
+
+<pre><code class="java"># /etc/sysconfig/docker
+#
+# Other arguments to pass to the docker daemon process
+# These will be parsed by the sysv initscript and appended
+# to the arguments list passed to docker -d
+
+other_args="--default-ulimit nofile=65535:65535 --insecure-registry 10.1.65.66:8080 --insecure-registry 10.10.15.168:5000 --insecure-registry 10.1.65.227:5000 --registry-mirror=http://6e512fcf.m.daocloud.io --selinux-enabled -H 0.0.0.0:2375 -H unix:///var/run/docker.sock  --insecure-registry 172.18.11.33:5000 --insecure-registry 10.1.64.83:5000  --insecure-registry 10.1.65.66:5000 --insecure-registry 10.1.64.84:5000"
+DOCKER_CERT_PATH=/etc/docker
+</code></pre>
+
+<h3 id="43-docker"><a name="user-content-43-docker" href="file:///tmp/15.html#43-docker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.3 重启Docker</h3>
+<p>修改完以上之后，重启Docker服务。<br>
+</p><pre><code>$ sudo service docker restart
+</code></pre><br>
+重启完之后我们再次运行推送命令，把本地镜像推送到私有服务器上。<br>
+<pre><code>$ sudo docker push 10.1.65.227:5000/base/busybox
+</code></pre><br>
+机可以看到镜像已经push到私有仓库中去了。<p></p>
+<p>接下来我们删除本地镜像，然后从私有仓库中pull下来该镜像。<br>
+</p><pre><code>$ sudo docker pull 10.1.65.227:5000/base/busybox
+</code></pre><p></p>
+<h3 id="44"><a name="user-content-44" href="file:///tmp/15.html#44" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.4 私有镜像库简单命令操作</h3>
+<p>到此就搭建好了Docker私有仓库。上面搭建的仓库是不需要认证的，我们可以结合nginx和https实现认证和加密功能。<br>
+管理仓库中的镜像</p>
+<ul>
+<li>查询：</li>
+</ul>
+<p>如果我们想要查询私有仓库中的所有镜像，使用docker search命令：<br>
+</p><pre><code>$ docker search registry_ip:5000/
+</code></pre><p></p>
+<ul>
+<li>如果要查询仓库中指定账户下的镜像，则使用如下命令：</li>
+</ul>
+<pre><code>$ docker search registry_ip:5000/account/
+</code></pre>
+
+<h3 id="45-v1-http-api"><a name="user-content-45-v1-http-api" href="file:///tmp/15.html#45-v1-http-api" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.5 私有镜像库V1 HTTP API</h3>
+<ul>
+<li>查询镜像：<br>
+<pre><code>$ curl -XGET http://10.1.65.227:5000/v1/search
+</code></pre></li>
+<li>获取镜像Tag：<br>
+<pre><code>$ curl -XGET http://10.1.65.227:5000/v1/repositories/base/busybox/tags
+</code></pre></li>
+<li>删除镜像指定Tag<br>
+<pre><code>$ curl -XDELETE http://10.1.65.55:5000/v1/repositories/base/busybox?tag=latest
+</code></pre></li>
+<li>删除镜像所有Tag<br>
+<pre><code>$ curl -XDELETE http://10.1.65.55:5000/v1/repositories/base/busybox/tags
+</code></pre></li>
+</ul>
+<h3 id="46-v2-http-api"><a name="user-content-46-v2-http-api" href="file:///tmp/15.html#46-v2-http-api" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.6 私有镜像库V2 HTTP API</h3>
+<ul>
+<li>查看镜像<br>
+<pre><code>$ curl -XGET http://registry:5000/v2/_catalog
+</code></pre></li>
+<li>查看指定镜像的Tag列表<br>
+<pre><code>$ curl -XGET http://registry:5000/v2/base/busybox/tags/list
+</code></pre><br>
+其他命令详见<code>https://docs.docker.com/registry/spec/api/</code></li>
+</ul>
+<h2 id="5-docker-consul"><a name="user-content-5-docker-consul" href="file:///tmp/15.html#5-docker-consul" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5 搭建Docker Consul集群及相关组件</h2>
+<p>Consul是一个支持多数据中心分布式高可用的服务发现和配置共享的服务软件，由 HashiCorp 公司用Go语言开发，基于 Mozilla Public License 2.0 的协议开源。本文介绍了如何使用Consul将多个Docker容器组合起来，以提供一个高可扩展的Web服务。</p>
+<h3 id="51"><a name="user-content-51" href="file:///tmp/15.html#51" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5.1 单机集群部署</h3>
+<ul>
+<li>分别启动三个server节点<br>
+用bootstrap-expect 3 来启动三个服务节点，并且绑定到容器的同一个ip</li>
+</ul>
+<p>node1:<br>
+<code>$ docker run -d --name node1 -h node1 progrium/consul -server -bootstrap-expect 3</code></p>
+<p>设置网络环境变量:<br>
+<code>$ JOIN_IP="$(docker inspect -f '{{ .NetworkSettings.IPAddress }}' node1)”</code></p>
+<p>node2:<br>
+<code>docker@boot2docker:~$ docker run -d --name node2 -h node2 progrium/consul -server -join $JOIN_IP</code></p>
+<p>node3:<br>
+<code>docker@boot2docker:~$ docker run -d --name node3 -h node3 progrium/consul -server -join $JOIN_IP</code></p>
+<ul>
+<li>启动client节点<br>
+<code>$ docker run -d -p 8400:8400 -p 8500:8500 -p 8600:53/udp -h node4 progrium/consul -join $JOIN_IP</code></li>
+</ul>
+<h3 id="52"><a name="user-content-52" href="file:///tmp/15.html#52" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5.2 多宿主机集群部署</h3>
+<p>如果你有多台宿主机部署Consul集群，我建议你采用Swarm+Docker Compose方式部署，简单易上手的网络工具组件Swarm和编排工具Docker Compose 可以大大的降低Docker部署的成本。</p>
+<ul>
+<li>
+<p>第一步，准备四台机器<br>
+</p><pre><code>10.1.64.158 master
+10.1.64.159 node1
+10.1.64.83 node2
+10.1.64.84 node3
+</code></pre><p></p>
+</li>
+<li>
+<p>第二步，安装consul-cluster<br>
+master:<br>
+</p><pre><code>docker run -d -h master -v /mnt:/data \
+-p 8300:8300 \
+-p 8301 \
+-p 8301:8301/udp \
+-p 8302:8302 \
+-p 8302:8302/udp \
+-p 8400:8400 \
+-p 8500:8500 \
+progrium/consul -server -advertise 10.1.64.158 -bootstrap-expect 3
+</code></pre><p></p>
+</li>
+</ul>
+<p>node1:<br>
+</p><pre><code>docker run -d -h node1 -v /mnt:/data \
+-p 8300:8300 \
+-p 8301:8301 \
+-p 8301:8301/udp \
+-p 8302:8302 \
+-p 8302:8302/udp \
+-p 8400:8400 \
+-p 8500:8500 \
+progrium/consul -server -advertise 10.1.64.159 -join 10.1.64.158
+</code></pre><p></p>
+<p>node2:<br>
+</p><pre><code>docker run -d -h node2 -v /mnt:/data \
+-p 8300:8300 \
+-p 8301:8301 \
+-p 8301:8301/udp \
+-p 8302:8302 \
+-p 8302:8302/udp \
+-p 8400:8400 \
+-p 8500:8500 \
+progrium/consul -server -advertise 10.1.64.183 -join 10.1.64.158
+</code></pre><p></p>
+<ul>
+<li>
+<p>第三步，安装consul-client<br>
+node3:<br>
+</p><pre><code>docker run -d -h node3 -v /mnt:/data \
+-p 8300:8300 \
+-p 8301:8301 \
+-p 8301:8301/udp \
+-p 8302:8302 \
+-p 8302:8302/udp \
+-p 8400:8400 \
+-p 8500:8500 \
+progrium/consul -advertise 10.1.64.84 -join 10.1.64.158
+</code></pre><p></p>
+</li>
+<li>
+<p>此处，小伙伴们要注意了，要将cluster和client的概念分开，不然容易产生混淆，会在cluster节点stop、 exist、dead等情况出现consul集群无法使用的问题。</p>
+</li>
+</ul>
+<h3 id="53-registrator"><a name="user-content-53-registrator" href="file:///tmp/15.html#53-registrator" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5.3 Registrator</h3>
+<p>在Docker容器启动后，Registrator配置好相应的环境变量并将这个容器注册到Consul上，示例如下：</p>
+<p><code>$ docker run -it -v /var/run/docker.sock:/tmp/docker.sock -h $DOCKER_IP progrium/registrator consul://$DOCKER_IP:8500</code></p>
+<p>Registrator启动后，我们运行一个服务： <br>
+<code>$ docker run -it -p 8000:80 busybox</code></p>
+<p>命令执行后，这个服务被自动添加到Consul，同理，如果我们关闭这个服务，它在Consul上会被自动移除。由于Registrator不需要我们手动将服务注册到Consul。<br>
+注册成功之后小伙伴们可以通过Consul API进行查询。</p>
+<ul>
+<li>如果此处小伙伴们启动的是多宿主机的Consul集群，我建议将registrator分别注册到不同的cluster节点上，便于以后日志的统计分析和服务问题快速定位 。</li>
+</ul>
+<h3 id="54-consul-template"><a name="user-content-54-consul-template" href="file:///tmp/15.html#54-consul-template" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5.4 Consul-template</h3>
+<p>Consul Template的作用是，当它发现Consul上的服务有变化时，它会利用Consul更新文件并执行相应的命令。 <br>
+比如说，它能够重写nginx.conf这个文件，将所有服务的路由信息列入其中，然后重新加载Nginx的配置，使得多个相似服务达到负载均衡，或者给多种服务提供一个单一的终端。 </p>
+<p>好吧，我们先尝试一下手动build一个consul-template镜像：<br>
+* 下载安装consul-template<br>
+<code>$ wget https://releases.hashicorp.com/consul-template/0.7.0/consul-template_0.7.0_linux_amd64.zip</code><br>
+<code>unzip consul-template_0.7.0_linux_amd64.zip -d /usr/bin/</code></p>
+<ul>
+<li>
+<p>查看nginx的dockerfile及相关文件。<br>
+</p><pre><code>[root@master nginx]# pwd
+/root/nginx
+[root@master nginx]# ls
+consul-template Dockerfile start.sh
+[root@master nginx]# cat Dockerfile 
+FROM nginx:latest
+
+ENTRYPOINT ["/bin/start.sh"]
+EXPOSE 80
+VOLUME /templates
+ENV CONSUL_URL consul:8500
+
+ADD start.sh /bin/start.sh
+RUN rm -v /etc/nginx/conf.d/*
+ADD consul-template /usr/local/bin/
+#RUN chmod +x /usr/local/bin/consul-template &amp;&amp; chmod +x /bin/start.sh
+
+[root@master nginx]# cat start.sh 
+#!/bin/bash
+service nginx start
+consul-template -consul=$CONSUL_URL -template="/templates/service.ctmpl:/etc/nginx/conf.d/service.conf:service nginx reload"
+</code></pre><p></p>
+</li>
+<li>
+<p>定义模版文件与结果文件<br>
+</p><pre><code>[root@master ~]# cat /tmp/service.ctmpl 
+upstream python-service {
+least_conn;
+{{range service "python-micro-service"}}server {{.Address}}:{{.Port}} max_fails=3 fail_timeout=60 weight=1;
+{{else}}server 127.0.0.1:65535; # force a 502 {{end}}
+}
+
+server {
+listen 80 default_server;
+charset utf-8;
+
+location / {
+proxy_pass http://python-service;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header Host $host;
+proxy_set_header X-Real-IP $remote_addr;
+}
+}
+</code></pre><p></p>
+</li>
+<li>
+<p>构建nginx镜像并并启动。<br>
+<code>$ docker build -t nginx .</code><br>
+<code>$ docker run -p 8080:80 -d --name nginx --volume /tmp/service.ctmpl:/templates/service.ctmpl --link consul:consul nginx</code></p>
+</li>
+<li>
+<p>查看模版结果。<br>
+进入nginx容器，查看配置文件内容。</p>
+</li>
+</ul>
+<p>到此处我们了解了，Docker-Tomplate镜像打包build的过程，唯一遗憾的是我们在启动过程中还需要<code>--link</code>来解决数据注册的问题，下面我们来解决一下吧。<br>
+我们选择了docker官方主流镜像的Dockerfile来看一下：<br>
+* Dockerfile 2<br>
+</p><pre><code>FROM nginx:1.7
+
+#Install Curl
+RUN apt-get update -qq &amp;&amp; apt-get -y install curl
+
+#Download and Install Consul Template
+ENV CT_URL http://bit.ly/15uhv24
+RUN curl -L $CT_URL | \
+tar -C /usr/local/bin --strip-components 1 -zxf -
+
+#Setup Consul Template Files
+RUN mkdir /etc/consul-templates
+ENV CT_FILE /etc/consul-templates/nginx.conf
+
+#Setup Nginx File
+ENV NX_FILE /etc/nginx/conf.d/app.conf
+
+#Default Variables
+ENV CONSUL consul:8500
+ENV SERVICE consul-8500
+
+# Command will
+# 1. Write Consul Template File
+# 2. Start Nginx
+# 3. Start Consul Template
+
+CMD echo "upstream app {                 \n\
+  least_conn;                            \n\
+  {{range service \"$SERVICE\"}}         \n\
+  server  {{.Address}}:{{.Port}};        \n\
+  {{else}}server 127.0.0.1:65535;{{end}} \n\
+}                                        \n\
+server {                                 \n\
+  listen 80 default_server;              \n\
+  location / {                           \n\
+    proxy_pass http://app;               \n\
+  }                                      \n\
+}" &gt; $CT_FILE; \
+/usr/sbin/nginx -c /etc/nginx/nginx.conf \
+&amp; CONSUL_TEMPLATE_LOG=debug consul-template \
+  -consul=$CONSUL \
+  -template "$CT_FILE:$NX_FILE:/usr/sbin/nginx -s reload";
+</code></pre><p></p>
+<ul>
+<li>Dockerfile 1<br>
+<pre><code>FROM nginx:1.9
+
+#Install Curl
+RUN apt-get update -qq &amp;&amp; apt-get -y install curl  zip
+
+#Install Consul Template
+#RUN curl -L https://github.com/hashicorp/consul-template/releases/download/v0.10.0/consul-template_0.10.0_linux_amd64.tar.gz | tar -C /usr/local/bin --strip-components 1 -zxf -
+RUN curl -L https://releases.hashicorp.com/consul-template/0.10.0/consul-template_0.10.0_linux_amd64.zip  
+RUN  unzip -o -d /usr/local/bin consul-template_0.10.0_linux_amd64.zip
+
+#Setup Consul Template Files
+RUN mkdir /etc/consul-templates
+COPY ./app.conf.tmpl /etc/consul-templates/app.conf
+
+# Remove all other conf files from nginx
+RUN rm /etc/nginx/conf.d/*
+
+#Default Variables
+ENV CONSUL consul:8500
+
+CMD /usr/sbin/nginx -c /etc/nginx/nginx.conf &amp;&amp; consul-template -consul=$CONSUL -template "/etc/consul-templates/app.conf:/etc/nginx/conf.d/app.conf:/usr/sbin/nginx -s reload"
+</code></pre></li>
+</ul>
+<p>对比过后发现两个Dockerfile大同小异，但第一个能在启动时打印更多的数据，所以我推崇第一个Dockerfile 的写法。</p>
+<p><code>docker build -t consul-template</code></p>
+<p></p><pre><code>docker run -it \
+-e "CONSUL=$DOCKER_IP:8500" \
+-e "SERVICE=simple" \
+-p 80:80 consul-template
+</code></pre><br>
+上面我们启动的这个consul-template容器将会对在Consul上注册的ServiceName为simple的容器or容器集群进行负载均衡，当服务更新时，consul-template也会通过获取Consul服务的注册信息，及时更新配置文件并平滑重启。<p></p>
+<h3 id="55-consul-http-api"><a name="user-content-55-consul-http-api" href="file:///tmp/15.html#55-consul-http-api" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5.5 Consul HTTP API</h3>
+<ul>
+<li>
+<p>查看注册服务信息<br>
+<code>curl -XGET 10.1.64.83:8500/v1/catalog/services</code></p>
+</li>
+<li>
+<p>查看单一注册服务详细信息<br>
+<code>curl -XGET 10.1.64.83:8500/v1/catalog/service/[ServiceName]</code><br>
+例如：</p>
+</li>
+</ul>
+<p><code>10.1.64.83:8500/v1/catalog/service/huidao_manage</code></p>
+<pre><code>[
+  {
+    "Node": "node-server-1-1",
+    "Address": "10.1.64.158",
+    "ServiceID": "10.1.64.158:huidao_manage:3000",
+    "ServiceName": "huidao_manage",
+    "ServiceTags": null,
+    "ServiceAddress": "10.1.64.158",
+    "ServicePort": 10005
+  }
+]
+</code></pre>
+
+<ul>
+<li>
+<p>删除服务的注册信息<br>
+<code>curl -XDELETE 10.1.64.83:8500/v1/agent/service/deregister/[ServiceID]</code></p>
+</li>
+<li>
+<p>特别注意上面是ServiceID</p>
+</li>
+</ul>
+<p>以上为常用API，如需更多详细API使用信息及方法，请查看Consul文档主页[<a href="https://www.consul.io/docs/agent/http.html">https://www.consul.io/docs/agent/http.html</a>]。</p>
+<h2 id="6-docker-nsq"><a name="user-content-6-docker-nsq" href="file:///tmp/15.html#6-docker-nsq" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6 搭建Docker NSQ集群及相关组件</h2>
+<h3 id="61"><a name="user-content-61" href="file:///tmp/15.html#61" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6.1 启动镜像顺序&amp;名令</h3>
+<ul>
+<li>nsqlookupd<br>
+<pre><code>docker run --name lookupd -p 4160:4160 -p 4161:4161 nsqio/nsq /nsqlookupd
+</code></pre></li>
+<li>nsqd<br>
+<pre><code>docker run --name nsqd -p 4150:4150 -p 4151:4151 \
+    nsqio/nsq /nsqd \
+    --broadcast-address=10.1.65.66  \
+    --lookupd-tcp-address=10.1.65.66:4160
+</code></pre></li>
+<li>nsqadmin<br>
+<pre><code>docker run -d --name nsqadmin -p 4171:4171 nsqio/nsq /nsqadmin  --lookupd-http-address=10.1.65.66:4161
+</code></pre></li>
+</ul>
+<h3 id="62-nsq"><a name="user-content-62-nsq" href="file:///tmp/15.html#62-nsq" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6.2 NSQ介绍</h3>
+<p>NSQ 是实时的分布式消息处理平台，其设计的目的是用来大规模地处理每天数以十亿计级别的消息。<br>
+NSQ 具有分布式和去中心化拓扑结构，该结构具有无单点故障、故障容错、高可用性以及能够保证消息的可靠传递的特征。 参见 features &amp; guarantees.<br>
+NSQ 非常容易配置和部署，且具有最大的灵活性，支持众多消息协议。另外，官方还提供了拆箱即用 Go 和 Python 库。如果读者有兴趣构建自己的客户端的话，还可以参考官方提供的协议规范。</p>
+<p>NSQ 是分布式实时消息系统。</p>
+<p>NSQ特性:<br>
+<em> 支持无 SPOF 的分布式拓扑<br>
+</em> 水平扩展(没有中间件，无缝地添加更多的节点到集群)<br>
+<em> 低延迟消息传递 (性能)<br>
+</em> 结合负载均衡和多播消息路由风格<br>
+<em> 擅长面向流媒体(高通量)和工作(低吞吐量)工作负载<br>
+</em> 主要是内存中(除了高水位线消息透明地保存在磁盘上)<br>
+<em> 运行时发现消费者找到生产者服务(nsqlookupd)<br>
+</em> 传输层安全性 (TLS)<br>
+<em> 数据格式不可知<br>
+</em> 一些依赖项(容易部署)和健全的，有界，默认配置<br>
+<em> 任何语言都有简单 TCP 协议支持客户端库<br>
+</em> HTTP 接口统计、管理行为和生产者(不需要客户端库发布)<br>
+<em> 为实时检测集成了 statsd<br>
+</em> 健壮的集群管理界面 (nsqadmin)</p>
+<p>NSQ担保<br>
+对于任何分布式系统来说，都是通过智能权衡来实现目标。通过这些透明的可靠性指标，我们希望能使得 NSQ 在部署到产品上的行为是可达预期的。</p>
+<ul>
+<li>消息不可持久化（默认）<br>
+虽然系统支持消息持久化存储在磁盘中（通过 –mem-queue-size ），不过默认情况下消息都在内存中.</li>
+</ul>
+<p>如果将 –mem-queue-size 设置为 0，所有的消息将会存储到磁盘。我们不用担心消息会丢失，nsq 内部机制保证在程序关闭时将队列中的数据持久化到硬盘，重启后就会恢复。</p>
+<p>NSQ 没有内置的复制机制，却有各种各样的方法管理这种权衡，比如部署拓扑结构和技术，在容错的时候从属并持久化内容到磁盘。</p>
+<ul>
+<li>消息最少会被投递一次<br>
+如上所述，这个假设成立于 nsqd 节点没有错误。</li>
+</ul>
+<p>因为各种原因，消息可以被投递多次（客户端超时，连接失效，重新排队，等等）。由客户端负责操作。</p>
+<ul>
+<li>接收到的消息是无序的<br>
+不要依赖于投递给消费者的消息的顺序。</li>
+</ul>
+<p>和投递消息机制类似，它是由重新队列(requeues)，内存和磁盘存储的混合导致的，实际上，节点间不会共享任何信息。</p>
+<p>它是相对的简单完成疏松队列，（例如，对于某个消费者来说，消息是有次序的，但是不能给你作为一个整体跨集群），通过使用时间窗来接收消息，并在处理前排序（虽然为了维持这个变量，必须抛弃时间窗外的消息）。</p>
+<ul>
+<li>消费者最终找出所有话题的生产者<br>
+这个服务(nsqlookupd) 被设计成最终一致性。nsqlookupd 节点不会维持状态，也不会回答查询。</li>
+</ul>
+<p>网络分区并不会影响可用性，分区的双方仍然能回答查询。部署性拓扑可以显著的减轻这类问题。</p>
+<h3 id="63-nsq-cluster"><a name="user-content-63-nsq-cluster" href="file:///tmp/15.html#63-nsq-cluster" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6.3 NSQ Cluster</h3>
+<p>下面的步骤将通过推送(publishing)、消费(consuming)和归档(archiving)消息到本地磁盘，在本地环境演示一个小型的 NSQ 集群</p>
+<ul>
+<li>
+<p>1、根据文档安装安装 NSQ。</p>
+</li>
+<li>
+<p>2、在另外一个 shell 中，运行 nsqlookupd:</p>
+</li>
+</ul>
+<p><code>$ nsqlookupd</code><br>
+再开启一个 shell，运行 nsqd:</p>
+<p><code>$ nsqd --lookupd-tcp-address=127.0.0.1:4160</code><br>
+再开启第三个 shell，运行 nsqadmin:</p>
+<p><code>$ nsqadmin --lookupd-http-address=127.0.0.1:4161</code><br>
+开启第四个 shell，推送一条初始化数据(并且在集群中创建一个 topic):</p>
+<p><code>$ curl -d 'hello world 1' 'http://127.0.0.1:4151/put?topic=test'</code><br>
+最后，开启第五个 shell， 运行 nsq_to_file:</p>
+<p><code>$ nsq_to_file --topic=test --output-dir=/tmp --lookupd-http-address=127.0.0.1:4161</code><br>
+推送更多地数据到 nsqd:</p>
+<p><code>$ curl -d 'hello world 2' 'http://127.0.0.1:4151/put?topic=test'</code><br>
+<code>$ curl -d 'hello world 3' 'http://127.0.0.1:4151/put?topic=test'</code><br>
+按照预先设想的，在浏览器中打开 <a href="http://127.0.0.1:4171/">http://127.0.0.1:4171/</a> 就能查看 nsqadmin 的 UI 界面和队列统计数据。同时，还可以在 /tmp 目录下检查 (test.<em>.log) 文件.<br>
+这个教程中最重要的是：nsq_to_file (客户端)没有明确地指出 test 主题从哪里产生，它从 nsqlookupd 获取信息，即使在消息推送之后才开始连接 nsqd，消息也并没有消失。<br>
+</em> nsqd<br>
+nsqd 是一个守护进程，负责接收，排队，投递消息给客户端。</p>
+<p>它可以独立运行，不过通常它是由 nsqlookupd 实例所在集群配置的（它在这能声明 topics 和 channels，以便大家能找到）。</p>
+<p>它在 2 个 TCP 端口监听，一个给客户端，另一个是 HTTP API。同时，它也能在第三个端口监听 HTTPS。</p>
+<ul>
+<li>命令行选项:<br>
+<pre><code>-auth-http-address=: &lt;addr&gt;:&lt;port&gt; 查询授权服务器 (可能会给多次)
+-broadcast-address="": 通过 lookupd  注册的地址（默认名是 OS）
+-config="": 配置文件路径
+-data-path="": 缓存消息的磁盘路径
+-deflate=true: 运行协商压缩特性（客户端压缩）
+-e2e-processing-latency-percentile=: 消息处理时间的百分比（通过逗号可以多次指定，默认为 none）
+-e2e-processing-latency-window-time=10m0s: 计算这段时间里，点对点时间延迟（例如，60s 仅计算过去 60 秒）
+-http-address="0.0.0.0:4151": 为 HTTP 客户端监听 &lt;addr&gt;:&lt;port&gt;
+-https-address="": 为 HTTPS 客户端 监听 &lt;addr&gt;:&lt;port&gt;
+-lookupd-tcp-address=: 解析 TCP 地址名字 (可能会给多次)
+-max-body-size=5123840: 单个命令体的最大尺寸
+-max-bytes-per-file=104857600: 每个磁盘队列文件的字节数
+-max-deflate-level=6: 最大的压缩比率等级（&gt; values == &gt; nsqd CPU usage)
+-max-heartbeat-interval=1m0s: 在客户端心跳间，最大的客户端配置时间间隔
+-max-message-size=1024768: (弃用 --max-msg-size) 单个消息体的最大字节数
+-max-msg-size=1024768: 单个消息体的最大字节数
+-max-msg-timeout=15m0s: 消息超时的最大时间间隔
+-max-output-buffer-size=65536: 最大客户端输出缓存可配置大小(字节）
+-max-output-buffer-timeout=1s: 在 flushing  到客户端前，最长的配置时间间隔。
+-max-rdy-count=2500: 客户端最大的 RDY 数量
+-max-req-timeout=1h0m0s: 消息重新排队的超时时间
+-mem-queue-size=10000: 内存里的消息数(per topic/channel)
+-msg-timeout="60s": 自动重新队列消息前需要等待的时间
+-snappy=true: 打开快速选项 (客户端压缩)
+-statsd-address="": 统计进程的 UDP &lt;addr&gt;:&lt;port&gt;
+-statsd-interval="60s": 从推送到统计的时间间隔
+-statsd-mem-stats=true: 切换发送内存和 GC 统计数据
+-statsd-prefix="nsq.%s": 发送给统计keys 的前缀(%s for host replacement)
+-sync-every=2500: 磁盘队列 fsync 的消息数
+-sync-timeout=2s: 每个磁盘队列 fsync 平均耗时
+-tcp-address="0.0.0.0:4150": TCP 客户端 监听的 &lt;addr&gt;:&lt;port&gt;
+-tls-cert="": 证书文件路径
+-tls-client-auth-policy="": 客户端证书授权策略 ('require' or 'require-verify')
+-tls-key="": 私钥路径文件
+-tls-required=false: 客户端连接需求 TLS
+-tls-root-ca-file="": 私钥证书授权 PEM 路径
+-verbose=false: 打开日志
+-version=false: 打印版本
+-worker-id=0: 进程的唯一码(默认是主机名的哈希值)
+</code></pre></li>
+</ul>
+<h3 id="64-nsq-http-api"><a name="user-content-64-nsq-http-api" href="file:///tmp/15.html#64-nsq-http-api" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6.4 NSQ HTTP API</h3>
+<ul>
+<li>/ping - 活跃度</li>
+<li>/info - 版本</li>
+<li>/stats - 检查综合运行</li>
+<li>/pub - 发布消息到话题（topic)</li>
+<li>/mpub - 发布多个消息到话题（topic)</li>
+<li>/debug/pprof - pprof 调试入口</li>
+<li>/debug/pprof/profile - 生成 pprof CPU 配置文件</li>
+<li>/debug/pprof/goroutine - 生成 pprof 计算配置文件</li>
+<li>/debug/pprof/heap - 生成 pprof 堆配置文件</li>
+<li>/debug/pprof/block - 生成 pprof 块配置文件</li>
+<li>/debug/pprof/threadcreate - 生成 pprof OS 线程配置文件<br>
+<code>v1 命名空间 (as of nsqd v0.2.29+)</code>:</li>
+<li>/topic/create - 创建一个新的话题（topic)</li>
+<li>/topic/delete - 删除一个话题（topic)</li>
+<li>/topic/empty - 清空话题（topic)</li>
+<li>/topic/pause - 暂停话题（topic)的消息流</li>
+<li>/topic/unpause - 恢复话题（topic)的消息流</li>
+<li>/channel/create - 创建一个新的通道（channel)</li>
+<li>/channel/delete - 删除一个通道（channel)</li>
+<li>/channel/empty - 清空一个通道（channel)</li>
+<li>/channel/pause - 暂停通道（channel)的消息流</li>
+<li>/channel/unpause - 恢复通道（channel)的消息流<br>
+<code>已抛弃的命名空间</code>:</li>
+<li>/create_topic - 创建一个新的话题（topic)</li>
+<li>/delete_topic - 删除一个话题（topic)</li>
+<li>/empty_topic - 清空话题（topic)</li>
+<li>/pause_topic - 暂停话题（topic)的消息流</li>
+<li>/unpause_topic - 恢复话题（topic)的消息流</li>
+<li>/create_channel - 创建一个新的通道（channel)</li>
+<li>/delete_channel - 删除一个通道（channel)</li>
+<li>/empty_channel - 清空一个通道（channel)</li>
+<li>/pause_channel - 暂停通道（channel)的消息流</li>
+<li>/unpause_channel - 恢复通道（channel)的消息流</li>
+</ul>
+<p>NOTE: 这些结束点返回 “wrapped” JSON:</p>
+<p></p><pre><code>{"status_code":200, "status_text":"OK", "data":{...}}
+</code></pre><br>
+发送 Accept: application/vnd.nsq; version=1.0 头将会协商使用未封装的 JSON 响应格式 (as of nsqd v0.2.29+)。<p></p>
+<p><code>/pub</code></p>
+<p>发布一个消息</p>
+<p>参数:<br>
+</p><pre><code>topic - the topic to publish to
+
+POST body - the raw message bytes
+$ curl -d "&lt;message&gt;" http://127.0.0.1:4151/pub?topic=message_topic`
+</code></pre><br>
+* <code>/mpub</code><br>
+一个往返发布多个消息<p></p>
+<p>参数:<br>
+</p><pre><code>topic - 发布到的话题（topic)
+binary - bool ('true' or 'false') 允许二进制模式
+
+POST body - `\n` 分离原始消息字节
+</code></pre><br>
+注意：默认的 /mpub 希望消息使用 \n 切割，使用 ?binary=true 查询参数来允许二进制模式，希望发送的消息体能成为以下的格式（HTTP ‘Content-Length’ 头必须是将要发送的消息体的总大小）：<br>
+<pre><code>[ 4-byte num messages ]
+[ 4-byte message #1 size ][ N-byte binary data ]
+      ... (repeated &lt;num_messages&gt; times)
+$ curl -d "&lt;message&gt;\n&lt;message&gt;\n&lt;message&gt;" http://127.0.0.1:4151/mpub?topic=message_topic`
+
+</code></pre><br>
+* <code>/topic/create</code><br>
+已经抛弃的别名 <code>/create_topic</code><p></p>
+<p>创建一个话题（topic)</p>
+<p>参数:<br>
+</p><pre><code>话题（topic) - 将要创建的话题（topic)
+``/topic/delete``
+</code></pre><p></p>
+<p>已经抛弃的别名 : <code>/delete_topic</code></p>
+<p>删除一个已经存在的话题（topic) (和所有的通道（channel))</p>
+<p>参数:<br>
+</p><pre><code>topic - 现有的话题（topic) to delete
+* ``/channel/create``
+</code></pre><br>
+已抛弃的别名: <code>/create_channel</code><p></p>
+<p>为现有的话题（topic) 创建一个通道（channel)</p>
+<p>参数:</p>
+<p>topic - 现有的话题（topic)<br>
+</p><pre><code>channel - the channel to create
+
+* ``/channel/delete``
+</code></pre><p></p>
+<p>已抛弃的别名: <code>/delete_channel</code></p>
+<p>删除现有的话题（topic) 一个的通道（channel)</p>
+<p>参数:</p>
+<p><code>topic - 现有的话题（topic)</code><br>
+<code>channel - 待删除的通道（channel)</code></p>
+<p><code>/topic/empty</code></p>
+<p>已抛弃的别名: /empty_topic</p>
+<p>清空现有话题（topic) 队列中所有的消息（内存和磁盘中）</p>
+<p>参数:</p>
+<p><code>topic - 待清空的话题（topic)</code></p>
+<ul>
+<li><code>/channel/empty</code></li>
+</ul>
+<p>已抛弃的别名: /empty_channel</p>
+<p>清空现有通道（channel) 队列中所有的消息（内存和磁盘中）</p>
+<p>参数:</p>
+<p><code>topic - 现有的话题（topic)</code><br>
+<code>channel - 待清空的通道（channel)</code></p>
+<ul>
+<li><code>/topic/pause</code></li>
+</ul>
+<p>已抛弃的别名: ``/pause_topic````</p>
+<p>暂停已有话题（topic) 的所有通道（channel)的消息（消息将会在话题（topic) 里排队）</p>
+<p>参数:</p>
+<p><code>topic - 现有的话题（topic)</code></p>
+<ul>
+<li><code>/topic/unpause</code></li>
+</ul>
+<p>已抛弃的别名: <code>/unpause_topic</code></p>
+<p>为现有的话题（topic) 的通道（channel) 重启消息流</p>
+<p>参数:</p>
+<p><code>topic - 现有的话题（topic)</code><br>
+* <code>/channel/pause</code></p>
+<p>已抛弃的别名: /channel_pause</p>
+<p>暂停发送已有的通道（channel) 给消费者（消息将会队列）</p>
+<p>参数:</p>
+<p><code>topic - 现有的话题（topic)</code><br>
+<code>channel - 已有的通道（channel)将会被暂停</code></p>
+<ul>
+<li><code>/channel/unpause</code></li>
+</ul>
+<p>已抛弃的别名: /unpause_channel</p>
+<p>重新发送通道（channel) 里的消息给消费者</p>
+<p>参数:<br>
+<code>topic - 现有的话题（topic)</code><br>
+<code>channel - 将要暂停的通道（channel)</code><br>
+* <code>/stats</code></p>
+<p>返回内部统计数据</p>
+<p>参数</p>
+<p>format - (可选) <code>text</code> or <code>json</code> (默认 = <code>text</code>)<br>
+/ping</p>
+<p>监控结束点，必须返回 OK。如果有问题返回 500。同时，如果写消息到磁盘失败将会返回错误状态。</p>
+<ul>
+<li><code>/info</code></li>
+</ul>
+<p>返回版本信息</p>
+<ul>
+<li><code>/debug/pprof</code></li>
+</ul>
+<p>可用的调试节点的页码</p>
+<ul>
+<li><code>/debug/pprof/profile</code></li>
+</ul>
+<p>开始 30秒的 <code>pprof</code> CPU 配置，并通过请求返回。</p>
+<p>注意，因为它在运行时的性能和时间，这个结束点并没在 <code>/debug/pprof</code> 页面列表中。</p>
+<ul>
+<li><code>/debug/pprof/goroutine</code></li>
+</ul>
+<p>为所有运行的 goroutines 返回栈记录。</p>
+<ul>
+<li><code>/debug/pprof/heap</code></li>
+</ul>
+<p>返回堆和内存配置信息（前面的内容可作为 <code>pprof</code> 配置信息）</p>
+<ul>
+<li><code>/debug/pprof/block</code></li>
+</ul>
+<p>返回 goroutine 块配置信息</p>
+<ul>
+<li><code>/debug/pprof/threadcreate</code></li>
+</ul>
+<p>返回 goroutine 栈记录</p>
+<p>Debugging and Profiling</p>
+<p>nsqd 提供一套节点的配置信息，直接通过 Go 的 pprof 工具。如果你有 go 工具套装，只要运行：<br>
+</p><pre><code>* ``memory profiling``
+$ go 工具 pprof http://localhost:4151/debug/pprof/heap
+
+* ``cpu profiling``
+$ go 工具 pprof http://localhost:4151/debug/pprof/profile
+TLS
+</code></pre><br>
+为了加强安全性，可以通过 <code>--tls-cert</code> 和 <code>--tls-key</code> 客户端配置 <code>nsqd</code>，升级他们的链接为 TLS。<p></p>
+<p>另外，你可以要求客户端使用 –tls-required (nsqd v0.2.28+)协商 TLS。</p>
+<p>你可以通过<code>--tls-client-auth-policy</code> (<code>require</code> 或 <code>require-verify</code>)配置一个 nsqd 客户端证书:</p>
+<ul>
+<li><code>require</code> - 客户端必须提供一个证书，否则将会被拒绝</li>
+<li><code>require-verify</code> - 客户端必须提供一个有效的证书，根据 <code>--tls-root-ca-file</code> 指定的链接或者默认的 CA，否则将会被拒绝。<br>
+可以当做客户端授权的表单（<code>nsqd v0.2.28+</code>）。</li>
+</ul>
+<p>如果你想生成一个 password-less，自签名证书，用：</p>
+<pre><code>$ openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes
+</code></pre>
+
+<h3 id="65-auth"><a name="user-content-65-auth" href="file:///tmp/15.html#65-auth" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6.5 AUTH</h3>
+<ul>
+<li>注意: 在 <code>nsqd v0.2.29+</code> 可用</li>
+</ul>
+<p>通过使用一个遵从 Auth HTTP 协议的授权服务器，指定 <code>-auth-http-address=host:port</code> 标志，你可以配置 <code>nsqd</code>。</p>
+<p>注意: 希望当仅有 <code>nsqd</code> TCP 协议暴露给外部客户端时使用授权，而不是 HTTP(S) 节点。参见底下说明：</p>
+<p>Auth 服务器必须接受 HTTP 请求：</p>
+<p><code>/auth?remote_ip=...&amp;tls=...&amp;auth_secret=...</code><br>
+返回结果格式如下：<br>
+</p><pre><code>{
+  "ttl": 3600,
+  "identity": "username",
+  "identity_url": "http://....",
+  "authorizations": [
+    {
+      "permissions": [
+        "subscribe",
+        "publish"
+      ],
+      "topic": ".*",
+      "channels": [
+        ".*"
+      ]
+    }
+  ]
+}
+</code></pre><br>
+注意话题（topic) 和通道（channel) 字符串必须用 nsqd 的正则表达式来申请授权。nsqd 将会为 TTL 间隔，并会在这个间隔时间里重新请求授权。<p></p>
+<p>通常情况，将会使用 TLS 来加强安全性。<code>nsqd</code> 和 授权服务器间通过信任的网络通信（并没被加密）。如果一个授权服务器通过远程 IP 信息来授权，客户端可以使用占位符（比如 .），作为 AUTH 命令（Auth 服务器忽略）。</p>
+<p>授权服务器例子 pynsqauthd。</p>
+<p>帮助服务器暴露 <code>nsqlookupd</code> 和 <code>nsqd</code> <code>/stats</code> 数据给客户端，从授权服务器通过权限过滤，在以下可以找到 nsqauthfilter。</p>
+<p>当使用命令行工具，可以通过使用 –reader-opt 标志来授权。<br>
+</p><pre><code>$ nsq_tail ... -reader-opt="tls_v1,true" -reader-opt="auth_secret,$SECRET"
+</code></pre><p></p>
+<h3 id="66"><a name="user-content-66" href="file:///tmp/15.html#66" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6.6 点对点处理延迟</h3>
+<p>你可以选择设置 <code>nsqd</code> 来收集和发射点对点信息处理延迟，通过 <code>--e2e-processing-latency-percentile</code> 标志位来配置百分比。</p>
+<p>使用概率百分比技术（参见 Effective Computation of Biased Quantiles over Data Streams）来计算值。我们通过 bmizerany 来使用 perks 包，它能实现这个算法。</p>
+<p>我们内部维持 2 个通道（channel)，每个通道（channel)存储 <code>N/2</code> 分钟的延迟数据。每个 <code>N/2</code> 分钟我们重置了每个通道（channel)（并开始插入新的数据）。</p>
+<p>因为我们仅在通道级别收集数据，对于话题我们聚合并合并所有的通道数量的 quantiles。如果数据在同一个 <code>nsqd</code> 实例上时，可以使用这个技术。然而当数据已经精确的通过 nsqd (通过 <code>nsqlookupd</code>），我们为每个 <code>nsqd</code> 取平均值。为了维持统计的精确性，除了平均值，我们也提供最大最小值。</p>
+<p>注意: 如果没有消费者连接，不能更新值，尽管消息队列的点对点时间会缓慢增长。这是因为仅在 <code>nsqd</code> 收到从客户端发来 <code>FIN</code> 消息时才会重新计算。当消费者重新连接，这些值将会重新调整。</p>
+<h3 id="67-statsd-graphite-integration"><a name="user-content-67-statsd-graphite-integration" href="file:///tmp/15.html#67-statsd-graphite-integration" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6.7 Statsd / Graphite Integration</h3>
+<p>当使用 <code>--statsd-address</code> 来为<code>statsd</code> （或类似 <code>statsdaemon</code>）指定 UDP <code>&lt;addr&gt;:&lt;port&gt;</code> 时，nsqd 将会在 <code>--statsd-interval</code> 定期推送数据给 statsd（注意：这个间隔必须始终小于等于 graphite 的刷入间隔）。设置 <code>nsqadmin</code> 可以显示图标。</p>
+<p>推荐以下配置（但是这些选择必须建立在你的可用资源和要求上）。同时，<code>statsd</code> 的刷入间隔必须小于或者等于 <code>storage-schemas.conf</code> 的最小值，并且 <code>nsqd</code> 必须通过 <code>--statsd-interval</code> 来确认刷入时间小于等于时间间隔。<br>
+</p><pre><code># storage-schemas.conf
+[nsq]
+pattern = ^nsq\..*
+retentions = 1m:1d,5m:30d,15m:1y
+
+# storage-aggregation.conf
+[default_nsq]
+pattern = ^nsq\..*
+xFilesFactor = 0.2 
+aggregationMethod = average
+</code></pre><br>
+<code>nsqd</code> 实例将会推送给以下 <code>statsd</code> 路径:<br>
+<pre><code>nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.backend_depth [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.depth [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.message_count
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.channel.&lt;channel_name&gt;.backend_depth [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.channel.&lt;channel_name&gt;.clients [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.channel.&lt;channel_name&gt;.deferred_count [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.channel.&lt;channel_name&gt;.depth [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.channel.&lt;channel_name&gt;.in_flight_count [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.channel.&lt;channel_name&gt;.message_count
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.channel.&lt;channel_name&gt;.requeue_count
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.channel.&lt;channel_name&gt;.timeout_count
+
+# if --statsd-mem-stats is enabled
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.mem.heap_objects [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.mem.heap_idle_bytes [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.mem.heap_in_use_bytes [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.mem.heap_released_bytes [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.mem.gc_pause_usec_100 [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.mem.gc_pause_usec_99 [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.mem.gc_pause_usec_95 [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.mem.mem.next_gc_bytes [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.mem.gc_runs
+
+# if --e2e-processing-latency-percentile is specified, for each percentile
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.e2e_processing_latency_&lt;percent&gt; [gauge]
+nsq.&lt;nsqd_host&gt;_&lt;nsqd_port&gt;.topic.&lt;topic_name&gt;.channel.&lt;channel_name&gt;.e2e_processing_latency_&lt;percent&gt; [gauge]
+</code></pre><p></p>
+<p>```</p>
+<h2 id="7-shelldocker"><a name="user-content-7-shelldocker" href="file:///tmp/15.html#7-shelldocker" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>7 Shell脚本部署应用Docker容器</h2>
+<h2 id="8-jenkin"><a name="user-content-8-jenkin" href="file:///tmp/15.html#8-jenkin" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>8 Jenkin部署应用服务容器</h2>
+<h2 id="9-nginx"><a name="user-content-9-nginx" href="file:///tmp/15.html#9-nginx" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>9 Nginx 搭建及优化</h2>
+<h2 id="10-docker-swarm"><a name="user-content-10-docker-swarm" href="file:///tmp/15.html#10-docker-swarm" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>10 Docker Swarm</h2>
+<h2 id="11-docker-compose"><a name="user-content-11-docker-compose" href="file:///tmp/15.html#11-docker-compose" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>11 Docker Compose</h2></article></body></html>
